@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+.app__flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-text {
+    font-size: 12px;
+  }
+
+  .head-text {
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+
+  
+    @media screen and (min-width: 2000px) {
+      font-size: 4rem;
+    }
+  
+    @media screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
+  }
