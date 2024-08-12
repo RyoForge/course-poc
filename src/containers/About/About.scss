@@ -1,0 +1,97 @@
+.app__about {
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .app__bg-circle {
+        position: absolute;
+        height: 650px;
+        width: 650px;
+        left: -10%;
+        border-radius: 100%;
+        border: 8rem solid var(--background-light);
+        background-color: transparent;
+        z-index: -1;
+
+        @media screen and (max-width:992px) {
+            display: none;
+        }
+    }
+
+    .app__about-items {
+        width: 1170px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        
+
+        .app__about-play {
+            flex: 1;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .app__about-play-img {
+                padding: 1.5rem;
+                border-radius: 100%;
+                background-color: var(--white-color);
+                border: 1rem solid var(--background-light);
+
+                
+                @media screen and (max-width:992px) {
+                    height: 280px;
+                    width: 280px;
+                }
+
+            }
+
+            .app__about-leaf {
+                position: absolute;
+                left: -25%;
+                z-index: -1;
+
+                @media screen and (max-width:992px) {
+                   display: none;
+                }
+            }
+
+            button {
+                position: absolute;
+                padding: 1.5rem 1.7rem;
+                text-align: center;
+                border-radius: 100%;
+                font-size: 1.4rem;
+                border: none;
+                background-color: var(--primary-color);
+                color: var(--white-color);
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                z-index: 2;
+
+                &:hover {
+                    background-color: var(--white-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .app__about-info {
+            flex: 1;
+            padding: 1rem 2rem;
+
+            p {
+                text-align: justify;
+            }
+
+            .app__about-info-numbers{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
