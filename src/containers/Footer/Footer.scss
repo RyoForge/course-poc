@@ -28,7 +28,10 @@
                     color: var(--gray-light);
                     font-size: 0.8em;
                 }
-
+                .white-text {
+                    color: white;
+                }
+               
                 .app__footer-social {
                     display: flex;
                     padding: 0.5rem;
@@ -67,7 +70,7 @@
 
                 h4 {
                     font-size: 1em;
-                    color: var(--white-color);
+                    color: var(--background-color);
                     margin: 15px;
                 }
 
@@ -88,7 +91,7 @@
                 flex: 1;
                 padding: 1rem;
                 a {
-                    color: var(--text-color);
+                    color: var(--background-color);
                     padding: 0 1rem;
                     text-decoration: none;
                     transition: all 0.2s ease;
@@ -102,7 +105,7 @@
 
                 h4 {
                     font-size: 1em;
-                    color: var(--white-color);
+                    color: var(--background-color);
                     margin: 15px;
                 }
 
@@ -121,7 +124,7 @@
 
             h4 {
                 font-size: 1em;
-                color: var(--white-color);
+                color: var(--background-color);
             }
 
             p {

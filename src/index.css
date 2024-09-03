@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&family=Work+Sans:wght@400;500;700&display=swap');
 
-.website-name{
-  color: #E6F7FF;
+.website-name {
+  color: #7C00FE;
 }
 
 * {
 
-  --text-color: #333333;
-  --text-dark: #252c3a;
-  --primary-color: #ff8800;
+  --text-color: #000000;
+  --text-dark: #000000;
+  --primary-color: #FFAF00;
   --white-color: #000000;
-  --background-color: rgba(163, 157, 157, 0.9);
+  --background-color: white;
   --background-light: #fdf6ee;
   --gray-light: #ffffff;
   --gray-dark: #ffffff;
-  --footer-color: #4b5771;
+  --footer-color: black;
   --footer-color-dark: #1d232e;
   --blue: #0089fd;
   --social-dark: #ffffff;
@@ -30,13 +30,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   -webkit-scroll-behavior: smooth;
-  background-color: #E6F7FF;
-  /* color: #333333; */
+  background: linear-gradient(to right, #7C00FE, #B533FF, #D500F9);
+   /* color: #333333; */
 }
 
-.app__home-intro .highlight-text{
+.app__home-intro .highlight-text {
   color: #000000;
   font-weight: bold;
 
 }
-

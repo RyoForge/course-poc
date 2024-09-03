@@ -7,7 +7,7 @@ nav {
     position: sticky;
     top: 0;
     padding: 1rem 0 0 0;
-    background-color: rgba(163, 157, 157, 0.9);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(4px);
     z-index: 2;
     width: 100vw;
@@ -42,7 +42,7 @@ nav {
         margin-right: 2rem;
 
         a {
-            color: var(--text-color);
+            color: var(--background-color);
             padding: 0 1rem;
             text-decoration: none;
             transition: all 0.2s ease,transform 0.3s ease;
