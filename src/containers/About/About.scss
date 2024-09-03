@@ -31,12 +31,12 @@
         flex-flow: row wrap;
         position: relative;
 
-        .app__about-play {
-            flex: 1;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        // .app__about-play {
+        //     flex: 1;
+        //     position: relative;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
 
             .app__about-play-img {
                 padding: 1.5rem;
@@ -86,6 +86,9 @@
 
             p {
                 text-align: justify;
+                color: var(--background-color);
+                font-size: 1.0rem;
+
             }
 
             .app__about-info-numbers {
@@ -94,7 +97,7 @@
             }
         }
     }
-}
+
 
 .react-modal-video {
     position: fixed;

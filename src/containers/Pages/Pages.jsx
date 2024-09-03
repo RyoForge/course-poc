@@ -60,7 +60,7 @@ const Pages = () => {
   return (
     <div className='app__page-section'>
     <div className='app__pages'>
-    <h1 className='head-text'>Courses offered by the Institute</h1>
+    <h1 className='head-text'>Courses offered by Us</h1>
     <div className='app__page-items'>
     {pagesContent.map((item) => (
       <motion.div
