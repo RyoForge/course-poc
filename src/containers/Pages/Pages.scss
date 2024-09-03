@@ -2,75 +2,77 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .app__pages{
-        width: 1170px;
+  
+    .app__pages {
+      width: 1170px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // color: var(--text-dark);
+  
+      .app__page-items {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-
-        .app__page-items {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem;
-            flex-flow: row wrap;
-
-            .app__page-item {
-
-                width: 250px;
-                height: 370px;
-                display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-direction: column;
-                margin: 1rem;
-                box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
-
-                img {
-                    width: 100%;
-                    height: 200px;
-                    object-fit: cover;
-                }
-
-                .app__page-course {
-                    font-family: 'Work Sans', sans-serif;
-                    font-weight: 500;
-                    font-size: 1.31em;
-                    color: var(--text-dark);
-                    padding: 0 1rem;
-                    margin-top: 1rem;
-                    cursor: pointer;
-
-                    &:hover {
-                    text-decoration: underline;
-                    color: var(--primary-color);
-                    }
-                }
-
-                h6 {
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: 400;
-                    font-size: 1em;
-                    color: var(--text-color);
-                    margin: 0.5rem 0;
-                    padding: 0 1rem;
-                }
-
-                .app__page-course-link {
-                    font-family: 'Work Sans', sans-serif;
-                    font-weight: 400;
-                    color: var(--text-color);
-                    font-size: 1.13em;
-                    padding: 1rem 1rem;
-                    cursor: pointer;
-                }
-
-
-
-
+        margin: 1rem;
+        flex-flow: row wrap;
+        // color: var(--text-dark);
+  
+        .app__page-item {
+          width: 250px;
+          height: 370px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          margin: 1rem;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+          border-radius: 8px; 
+          color: var(--text-dark);
+          background-color: rgb(255, 255, 255); 
+  
+          img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 8px; /* Match card's top corners */
+            border-top-right-radius: 8px; 
+          }
+  
+          .app__page-course {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 500;
+            font-size: 1.31em;
+            color: var(--text-dark);
+            padding: 0 1rem;
+            margin-top: 1rem;
+            cursor: pointer;
+  
+            &:hover {
+              text-decoration: underline;
+              color: var(--primary-color);
             }
+          }
+  
+          h6 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+            color: var(--text-color);
+            margin: 0.5rem 0;
+            padding: 0 1rem;
+          }
+  
+          .app__page-course-link {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 400;
+            color: var(--text-color);
+            font-size: 1.13em;
+            padding: 1rem 1rem;
+            cursor: pointer;
+          }
         }
+      }
     }
-}
+  }
