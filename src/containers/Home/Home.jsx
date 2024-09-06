@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react'; // Removed useState as it's not used anymore
-import ModalVideo from 'react-modal-video'; // This import seems unused, you can remove it if not needed elsewhere
+import React, { useEffect, useRef } from 'react'; 
+import ModalVideo from 'react-modal-video'; 
 import { FaPlay } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import './Home.scss';
@@ -20,7 +20,7 @@ const Home = () => {
         className="app__home-intro"
       >
         <h1 className='website-name'>
-          <span className='highlight-text'>A-Spiders <br/> Institute</span>
+          <span className='highlight-text'>A-Spiders  Institute</span>
         </h1>
         <h1>"Empowering education and<br/>advancing society."</h1>
         <p>Unlock your potential with our transformative programs, Expert faculty, and vibrant learning community.</p> 

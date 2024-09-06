@@ -20,10 +20,10 @@
         flex-flow: row wrap;
         // color: var(--text-dark);
 
-        @media screen and (max-width: 768px) { // Adjust breakpoint as needed
-          justify-content: center; /* Center the items horizontally */
-          align-items: center;     /* Center the items vertically (if needed) */
-          flex-wrap: wrap;         /* Allow items to wrap to the next line */
+        @media screen and (max-width: 768px) { 
+          justify-content: center; 
+          align-items: center;    
+          flex-wrap: wrap;         
         }
       }
   
@@ -44,7 +44,7 @@
             width: 100%;
             height: 200px;
             object-fit: cover;
-            border-top-left-radius: 8px; /* Match card's top corners */
+            border-top-left-radius: 8px; 
             border-top-right-radius: 8px; 
           }
   

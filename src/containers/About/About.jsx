@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import './About.scss';
 import { Images } from '../../constants';
 
+
 const Numbers = [
   {
     count: '3000+',
@@ -35,8 +36,10 @@ const Numbers = [
   }
 ];
 
+
 const About = () => {
   const [isOpen, setOpen] = useState(false); 
+
 
   return (
     <div className='app__about'>
@@ -45,11 +48,13 @@ const About = () => {
         whileInView={{ y: [-50, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}
         className='app__about-items'>
+        <h1 className='about-us-title'>About Us</h1>
         <div className='app__about-play'> 
           <img src={Images.about} className="app__about-play-img" alt="About"/>
-          <img src={Images.leaf} className="app__about-leaf" alt="leaf"/>   
+          <img src={Images.leaf} className="app__about-leaf" alt="leaf"/>  
 
         </div> 
+
 
         <div className='app__about-info'>
           <h1 className='head-text'>Endless opportunities, boundless potential at <br /> A-Spiders.</h1>
@@ -68,7 +73,7 @@ const About = () => {
             {Numbers.map((item) => (
               <div className='app__about-info-number' key={item.name}>
                 <h1 style={{ ...item.style, color: item.color }}>{item.count}</h1> 
-                <h4 style={{ ...item.style, color: item.color }}>{item.name}</h4>  
+                <h4 style={{ ...item.style, color: item.color }}>{item.name}</h4>  
               </div>
             ))}
           </div>
@@ -86,5 +91,6 @@ const About = () => {
     </div>
   );
 };
+
 
 export default About;

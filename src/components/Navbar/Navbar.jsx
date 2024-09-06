@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.scss';
 import { Images } from '../../constants';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-
+const [toggle, setToggle] = useState(false);
   return (
     <nav className='app__navbar'>
       <div className='app__navbar-logo'>
@@ -28,6 +27,7 @@ const Navbar = () => {
         <HiMenuAlt4 onClick={() => setToggle(true)} />
         {toggle && (
           <motion.div
+          key="menu"
             initial={{ width: 0 }}
             animate={{
               width: 300,
