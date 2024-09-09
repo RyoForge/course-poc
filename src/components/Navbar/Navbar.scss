@@ -67,12 +67,12 @@ nav {
         cursor: pointer;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
         transition: all 0.3s ease, transform 0.3s ease;
-        transform: translateX(-10px);
+        transform: translateX(-20px);
 
         &:hover {
             color: var(--white-color);
             background-color: var(--primary-color);
-            transform: scale(1.1);
+            // transform: scale(1.1);
         }
     }
 
